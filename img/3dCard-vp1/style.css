@@ -1,0 +1,118 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fefefe;
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 420px;
+    height: 265px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.card-front{
+    padding: 15px;
+}
+.card-front,
+.card-back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all 2s ease;
+    background-color: rgba(109,14,177,.95);
+    border-radius: 5px;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card.flip .card-back{
+    transform: rotateY(360deg);
+}
+.card.flip .card-front{
+    transform: rotateY(180deg);
+}
+
+
+.card-input{
+    position: absolute;
+}
+input{
+    display: block;
+    padding: 7px 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+label{
+    color: #fff;
+
+}
+.logo{
+    text-align: right;
+}
+.card-input:focus{
+    border: 1px solid #ccc;
+}
+
+.card-number{
+    top: 85px;
+    width: 100%;
+}
+.card-number input{
+    width: 70%;
+}
+.card-date{
+    bottom: 30px;
+    right: 15px;
+   
+}
+.card-date input{
+    width: 60px;
+}
+.card-name{
+    bottom: 30px;
+}
+.black-line{
+    width: 100%;
+    background-color: #000;
+    margin-top: 60px;
+    text-align: right;
+}
+.card-ccv{
+    background-color: #000;
+    color: #000;
+}
+.card-ccv input{
+    width: 50px;
+    display: inline-block;
+    margin-top: 0;
+}
+.card-back p{
+    color: #fff;
+    padding: 15px;
+    font-size: 13px;
+
+}
+.btn{
+    display: inline-block;
+    background-color: rgba(109,14,177,.95);
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
