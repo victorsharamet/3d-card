@@ -6,25 +6,38 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>3d card</h1>
 	<div class="container">
-		<div class="card">
-			<div class="card-front">FRONT</div>
-				<div class="card-input">
+		<div id="card" class="card">
+			<div class="card-front">
+				<div class="logo">
+					<img src="img/logo.png" alt="GENESIS">
+				</div>
+				<div class="card-input card-number">
 					<label for="nubmer">Номер карты</label>
 					<input type="text" id="number" placeholder="XXXX XXXX XXXX XXXX" required>
 				</div>
-				<div class="card-input">
+				<div class="card-input card-name">
 					<label for="nubmer">Имя владельца</label>
 					<input type="text" id="name" placeholder="IVANOV IVAN" required>
 				</div>
-				<div class="card-date">
-					<label for="date">Номер карты</label>
+				<div class="card-input card-date">
+					<label for="date">Срок действия</label>
 					<input type="text" id="date" placeholder="04/12" required>
 				</div>
-			<div class="card-back">BACK</div>
+			</div>
+			<div class="card-back">
+				<div class="black-line">
+					<input type="text" placeholder="ccv">
+				</div>
+				<p>
+					Справочная информация и номера телефонов. Как связаться с нами. Далеко-далеко за словесными горами в стране, гласных и согласных.
+				</p>
+			</div>
 		</div>
-		<div class="btn">Перевернуть</div>
+		<div class="btn" onclick="cardFlip()">Перевернуть</div>
 	</div>
+
+	<script src="script.js"></script>
+
 </body>
 </html>

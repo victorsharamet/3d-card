@@ -1,5 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	background-color: #ccc;
+	font-family: Arial;
 }
 
 .container {
@@ -7,8 +14,11 @@ body {
 	margin: 100px auto 0;
 }
 
+.logo {
+	text-align: right;
+}
+
 .card {
-	border: 2px solid red;
 	width: 400px;
 	height: 300px;
 	transform-style: preserve-3d;
@@ -22,19 +32,106 @@ body {
 	background-color: rgba(109,14,177);
 	position: absolute;
 	color: #FFF;
-	font-size: 35px;
 	backface-visibility: hidden;
 	transition: all 2s ease;
+    border-radius: 10px;
+}
+
+.card-front {
+	padding: 15px;
 }
 
 .card-back {
 	transform: rotateY(180deg);
 }
+.card-input {
+	position: absolute;
+}
 
-.card:hover .card-back {
+.card-input label {
+	display: block;
+	color: #FFF;
+	font-size: 20px;
+}
+
+.card-input input {
+    border-radius: 7px;
+    padding: 7px 15px;
+    margin-top: 5px;
+}
+
+.card-date input {
+	width: 70px;
+}
+
+.card-number input {
+	width: 303px;
+}
+
+.card-name input {
+	width: 225px;
+}
+
+.card-number {
+	top: 115px;
+}
+
+.card-name {
+	top: 200px;
+}
+
+.card-date {
+	top: 200px;
+	right: 15px;
+}
+
+.black-line {
+	background-color: #000;
+	height: 40px;
+	text-align: right;
+	margin-top: 100px;
+}
+
+.black-line input {
+	width: 50px;
+	height: 40px;
+	font-size: 25px;
+}
+
+.card-back p {
+	color: #FFF;
+	padding: 15px;
+	font-size: 18px;
+}
+
+.btn {
+	background-color: rgba(109,14,177);
+	color: #FFF;
+	padding: 10px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.flip {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+.flip .card-back {
 	transform: rotateY(360deg);
 }
 
-.card:hover .card-front {
+.flip .card-front {
 	transform: rotateY(180deg);
 }
