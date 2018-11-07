@@ -9,8 +9,20 @@
 	<h1>3d card</h1>
 	<div class="container">
 		<div class="card">
-			<div class="card__front">FRONT</div>
-			<div class="card__back">BACK</div>
+			<div class="card-front">FRONT</div>
+				<div class="card-input">
+					<label for="nubmer">Номер карты</label>
+					<input type="text" id="number" placeholder="XXXX XXXX XXXX XXXX" required>
+				</div>
+				<div class="card-input">
+					<label for="nubmer">Имя владельца</label>
+					<input type="text" id="name" placeholder="IVANOV IVAN" required>
+				</div>
+				<div class="card-date">
+					<label for="date">Номер карты</label>
+					<input type="text" id="date" placeholder="04/12" required>
+				</div>
+			<div class="card-back">BACK</div>
 		</div>
 		<div class="btn">Перевернуть</div>
 	</div>

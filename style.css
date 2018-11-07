@@ -11,30 +11,30 @@ body {
 	border: 2px solid red;
 	width: 400px;
 	height: 300px;
-    transform-style: preserve-3d;
-    perspective: 600px;
+	transform-style: preserve-3d;
+	perspective: 600px;
 }
 
-.card__front,
-.card__back {
+.card-front,
+.card-back {
 	width: 400px;
 	height: 300px;
 	background-color: rgba(109,14,177);
 	position: absolute;
 	color: #FFF;
 	font-size: 35px;
-    backface-visibility: hidden;
-    transition: all 2s ease;
+	backface-visibility: hidden;
+	transition: all 2s ease;
 }
 
-.card__back {
-    transform: rotateY(180deg);
+.card-back {
+	transform: rotateY(180deg);
 }
 
-.card:hover .card__back {
-    transform: rotateY(360deg);
+.card:hover .card-back {
+	transform: rotateY(360deg);
 }
 
-.card:hover .card__front {
-    transform: rotateY(180deg);
+.card:hover .card-front {
+	transform: rotateY(180deg);
 }
